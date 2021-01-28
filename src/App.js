@@ -1,14 +1,18 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Header from "./Components/HeaderBlock/Header";
+import Layout from "./Components/LayoutBlock/Layout";
+import Footer from "./Components/FooterBlock/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>hello world</p>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Layout />
+      <Layout />
+      <Layout />
+      <Footer />
+    </>
   );
 }
 
