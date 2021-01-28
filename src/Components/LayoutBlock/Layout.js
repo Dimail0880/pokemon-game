@@ -2,9 +2,14 @@ import React, { Component } from "react";
 import styles from "./Layout.module.css";
 
 const Layout = (props) => {
+  console.log(props.urlBg);
   return (
     <>
-      <section className={styles.root} id={props.id}>
+      <section
+        className={styles.root}
+        id={props.id}
+        style={{ background: `url(${props.urlBg})` }}
+      >
         <div className={styles.wrapper}>
           <article>
             <div className={styles.title}>
